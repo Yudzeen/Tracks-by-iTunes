@@ -9,3 +9,6 @@ Android lifecycle better, and handle asynchronous operations and events easier.
 ## Persistence
 For local persistence, we are using the Room library. For the database, we have ItunesSearchDatabase for our data storage. We have the TrackEntity class to define the Track table
 and columns. Then, our data can be accessed using the TrackDao (data-access object). 
+
+## Download
+APK: https://drive.google.com/file/d/10-i4vLhFvPyDn9SY6AJWoy5dJvc3bzjJ/view?usp=sharing
