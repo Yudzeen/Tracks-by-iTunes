@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314529011182",
+    "project_id": "tracks-by-itunes",
+    "storage_bucket": "tracks-by-itunes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314529011182:android:112ea4d0f40e5ddc412aff",
+        "android_client_info": {
+          "package_name": "com.ejavinas.tracksbyitunes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314529011182-jboi645i6k2at4bqbviskchgh7b73a6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0O2SeQ5M-bvYe17V1R1CZFMw90GuNyI8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314529011182-jboi645i6k2at4bqbviskchgh7b73a6f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
