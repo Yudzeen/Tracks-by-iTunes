@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+apply from: "$rootDir/base-android-module.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId release.application_id
+        versionCode release.version_code
+        versionName release.version_name
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation project(':common')
+    implementation project(':itunessearch')
+
+
+    kapt "com.google.dagger:hilt-compiler:$versions.hilt"
+    implementation "com.google.dagger:hilt-android:$versions.hilt"
+
+    implementation "androidx.core:core-ktx:$versions.core_ktx"
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.navigation"
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.navigation"
+    implementation "com.google.android.material:material:$versions.material"
+
+}

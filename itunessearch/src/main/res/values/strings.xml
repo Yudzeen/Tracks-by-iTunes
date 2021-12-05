@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_getting_tracks">Error getting tracks. Please try again later.</string>
+    <string name="error_refreshing_tracks">Error refreshing tracks</string>
+    <string name="no_description_available">No description available.</string>
+    <string name="msg_empty_tracks_and_no_network">Please connect to a network and refresh.</string>
+    <string name="getting_tracks">Getting tracks...</string>
+</resources>

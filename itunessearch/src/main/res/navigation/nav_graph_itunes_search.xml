@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_itunes_search"
+    app:startDestination="@id/trackListFragment">
+
+    <fragment
+        android:id="@+id/trackListFragment"
+        android:name="com.ejavinas.trackbyitunes.itunessearch.views.list.TrackListFragment"
+        android:label="TrackListFragment"
+        tools:layout="@layout/fragment_track_list">
+        <action
+            android:id="@+id/action_trackListFragment_to_trackDetailFragment"
+            app:destination="@id/trackDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackDetailFragment"
+        android:name="com.ejavinas.trackbyitunes.itunessearch.views.detail.TrackDetailFragment"
+        android:label="TrackDetailFragment"
+        tools:layout="@layout/fragment_track_detail">
+        <argument
+            android:name="track"
+            app:argType="com.ejavinas.trackbyitunes.itunessearch.model.Track" />
+    </fragment>
+
+</navigation>

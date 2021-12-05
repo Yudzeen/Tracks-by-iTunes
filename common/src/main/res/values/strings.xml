@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tracks by iTunes</string>
+    <string name="refresh">Refresh</string>
+    <string name="artwork">Artwork</string>
+    <string name="error_network_connection">Please check your network connection.</string>
+</resources>
